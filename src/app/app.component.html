@@ -1,0 +1,12 @@
+<h1>
+  injection de component
+</h1>
+
+@for (c of listComponent; track c.name) {
+
+  <button (click)="load(c)">{{ c.name }}</button>
+}
+
+@for (c of listComponent; track c.name) {
+  <pane [id]="c.name"></pane>
+}
